@@ -17,7 +17,7 @@ Ensure you have the following installed:
 
 Clone the repository and install dependencies:
 
-git clone https://github.com/yourusername/fitjam.git
+git clone https://github.com/devmev10/fitjam.git
 cd fitjam
 npm install # or yarn install
 
