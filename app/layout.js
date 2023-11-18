@@ -1,7 +1,4 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "FitJam - Lose Weight, Gain Muscle & Break Barriers",
@@ -12,7 +9,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body>
+        <nav>
+          <h3>yo</h3>
+          <h3>lo</h3>
+        </nav>
+        {children}
+      </body>
     </html>
   );
 }
