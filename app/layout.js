@@ -1,5 +1,4 @@
 import "./globals.css";
-import { Button } from "@/components/ui/button";
 
 export const metadata = {
   title: "FitJam - Lose Weight, Gain Muscle & Break Barriers",
@@ -10,13 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <nav>
-          <h3>FitJam</h3>
-          <Button className="ml-10">Click Me</Button>
-        </nav>
-        {children}
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
