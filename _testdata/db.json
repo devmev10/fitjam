@@ -1,23 +1,23 @@
 {
-  "plateau": [
+  "plateaus": [
     {
       "id": 1,
       "title": "Morning Yoga",
-      "image": "morning_yoga.jpg",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700367198/fitjam/sris8gymxhfi6fp17efa.jpg",
       "description": "Start your day with a refreshing yoga routine to boost energy and flexibility.",
       "level": "Beginner"
     },
     {
       "id": 2,
       "title": "HIIT Workout",
-      "image": "hiit_workout.jpg",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700367197/fitjam/rwwnekmzuzarg0axkvuc.jpg",
       "description": "High-Intensity Interval Training for a quick and effective full-body workout.",
       "level": "Intermediate"
     },
     {
       "id": 3,
       "title": "Marathon Training",
-      "image": "marathon_training.jpg",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700367198/fitjam/pe9qnccarsbfek72bwb8.jpg",
       "description": "Prepare for a marathon with structured training sessions for endurance and stamina.",
       "level": "Advanced"
     }
