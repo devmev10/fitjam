@@ -1,4 +1,5 @@
 import "./globals.css";
+import NavBar from "@/components/NavBar";
 
 export const metadata = {
   title: "FitJam - Lose Weight, Gain Muscle & Break Barriers",
@@ -9,7 +10,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <NavBar />
+        {children}
+      </body>
     </html>
   );
 }
