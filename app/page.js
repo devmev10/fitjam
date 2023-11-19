@@ -1,4 +1,12 @@
 import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function Home() {
   return (
@@ -17,7 +25,20 @@ export default function Home() {
           <p>Overcome plateaus with tailored strategies</p>
           <Button>Learn More</Button>
         </div>
-        <div></div>
+        <div className="grid grid-cols-3 gap-8">
+          <Card>
+            <CardHeader>
+              <CardTitle>Plateau Breaking Guide</CardTitle>
+              <CardDescription>Card Description</CardDescription>
+            </CardHeader>
+            <CardContent>
+              <p>Implement deloading phases to help overcome plateaus</p>
+            </CardContent>
+            <CardFooter>
+              <p>Soon</p>
+            </CardFooter>
+          </Card>
+        </div>
       </section>
 
       <hr />

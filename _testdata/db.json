@@ -1,0 +1,25 @@
+{
+  "plateau": [
+    {
+      "id": 1,
+      "title": "Morning Yoga",
+      "image": "morning_yoga.jpg",
+      "description": "Start your day with a refreshing yoga routine to boost energy and flexibility.",
+      "level": "Beginner"
+    },
+    {
+      "id": 2,
+      "title": "HIIT Workout",
+      "image": "hiit_workout.jpg",
+      "description": "High-Intensity Interval Training for a quick and effective full-body workout.",
+      "level": "Intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Marathon Training",
+      "image": "marathon_training.jpg",
+      "description": "Prepare for a marathon with structured training sessions for endurance and stamina.",
+      "level": "Advanced"
+    }
+  ]
+}
