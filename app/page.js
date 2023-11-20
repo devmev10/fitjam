@@ -32,7 +32,7 @@ export default async function Home() {
           <p>Overcome plateaus with tailored strategies</p>
           <Button>Learn More</Button>
         </div>
-        <div className="grid grid-cols-3 gap-8">
+        <div className="grid lg:grid-cols-3 gap-8">
           {plateaus.map((plateau) => (
             <Card key={plateau.id} className="relative">
               <CardHeader>
@@ -44,13 +44,15 @@ export default async function Home() {
                   <img
                     src={plateau.image}
                     alt={plateau.title}
-                    className="w-full"
+                    className="w-full h-64 object-cover"
                   />
                 </div>
               </CardContent>
               <CardFooter>
                 <Button>Show more</Button>
-                <p>{plateau.level}</p>
+                <div className="badge">
+                  <p>{plateau.level}</p>
+                </div>
               </CardFooter>
             </Card>
           ))}
