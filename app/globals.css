@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 .badge {
-  @apply absolute bottom-0 right-0 m-4 font-bold rounded-full bg-black text-white p-2 text-sm;
+  @apply absolute bottom-0 right-0 m-1 font-bold rounded-full bg-black text-white p-2 text-sm;
 }
