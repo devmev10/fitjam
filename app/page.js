@@ -34,25 +34,25 @@ export default async function Home() {
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
           {plateaus.map((plateau) => (
-            <Card key={plateau.id} className="relative">
+            <Card key={plateau.id} className="">
               <CardHeader>
                 <CardTitle>{plateau.title}</CardTitle>
                 <CardDescription>{plateau.description}</CardDescription>
               </CardHeader>
               <CardContent>
-                <div>
+                <div className="relative">
                   <img
                     src={plateau.image}
                     alt={plateau.title}
                     className="w-full h-64 object-cover"
                   />
+                  <div className="badge">
+                    <p>{plateau.level}</p>
+                  </div>
                 </div>
               </CardContent>
               <CardFooter>
                 <Button>Show more</Button>
-                <div className="badge">
-                  <p>{plateau.level}</p>
-                </div>
               </CardFooter>
             </Card>
           ))}
