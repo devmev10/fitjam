@@ -7,7 +7,6 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import Image from "next/image";
 
 export async function getPlateau() {
   const result = await fetch("http://localhost:4000/plateaus");
@@ -35,18 +34,17 @@ export default async function Home() {
         </div>
         <div className="grid grid-cols-3 gap-8">
           {plateaus.map((plateau) => (
-            <Card key={plateau.id}>
+            <Card key={plateau.id} className="relative">
               <CardHeader>
                 <CardTitle>{plateau.title}</CardTitle>
                 <CardDescription>{plateau.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div>
-                  <Image
+                  <img
                     src={plateau.image}
                     alt={plateau.title}
-                    width={500}
-                    height={500}
+                    className="w-full"
                   />
                 </div>
               </CardContent>
