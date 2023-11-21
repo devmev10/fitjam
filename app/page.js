@@ -66,40 +66,43 @@ export default async function Home() {
           <h4>Make small improvements for steady progress</h4>
         </div>
         <article className="flex flex-col space-y-6">
-          <div className="grid grid-cols-3">
-            <div className="">
+          <div className="grid grid-cols-3 border p-2 border-black">
+            <div className="col-span-1">
               <img
                 src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/fag0emh5e1htx1b6ggol.jpg"
                 alt="progress track"
+                className="w-full h-40 object-cover"
               />
             </div>
-            <div>
+            <div className="col-span-2 flex flex-col space-y-4 p-2">
               <h3>Track Your Progress</h3>
               <h4>Record your workouts and monitor your progress over time</h4>
               <h5>Placeholder for icons</h5>
             </div>
           </div>
-          <div>
-            <div>
+          <div className="grid grid-cols-3 border p-2 border-black">
+            <div className="col-span-1">
               <img
                 src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/urx49emlk7jpidphzbmd.jpg"
                 alt="Small Wins"
+                className="w-full h-40 object-cover"
               />
             </div>
-            <div>
+            <div className="col-span-2 flex flex-col space-y-4 p-2">
               <h3>Celebrate Small Wins</h3>
               <h4>Acknowledge and celebrate your micro-achievements</h4>
               <h5>Placeholder for icons</h5>
             </div>
           </div>
-          <div>
-            <div>
+          <div className="grid grid-cols-3 border p-2 border-black">
+            <div className="col-span-1">
               <img
                 src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/itybpgo3ghilw5hbkl4y.jpg"
                 alt="Consistency"
+                className="w-full h-40 object-cover"
               />
             </div>
-            <div>
+            <div className="col-span-2 flex flex-col space-y-4 p-2">
               <h3>Stay Consistent</h3>
               <h4>Commit to regular workouts to build momentum</h4>
               <h5>Placeholder for icons</h5>
