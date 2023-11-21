@@ -19,7 +19,7 @@ export default async function Home() {
   return (
     <main>
       <header className="flex flex-col items-center p-10 space-y-4">
-        <h1>Welcome to FitJam</h1>
+        <h1 className="text-3xl font-bold">Welcome to FitJam</h1>
         <p>Stay motivated and break through plateaus</p>
         <Button>Get Started</Button>
       </header>
@@ -28,7 +28,9 @@ export default async function Home() {
 
       <section className="mb-10">
         <div className="flex flex-col items-center p-10 space-y-4">
-          <h1>Personalized Plateau-Breaking Plans</h1>
+          <h1 className="text-3xl font-bold">
+            Personalized Plateau-Breaking Plans
+          </h1>
           <p>Overcome plateaus with tailored strategies</p>
           <Button>Learn More</Button>
         </div>
@@ -75,7 +77,7 @@ export default async function Home() {
               />
             </div>
             <div className="col-span-2 flex flex-col space-y-4 p-2">
-              <h3>Track Your Progress</h3>
+              <h3 className="text-xl font-bold">Track Your Progress</h3>
               <h4>Record your workouts and monitor your progress over time</h4>
               <h5>Placeholder for icons</h5>
             </div>
@@ -89,7 +91,7 @@ export default async function Home() {
               />
             </div>
             <div className="col-span-2 flex flex-col space-y-4 p-2">
-              <h3>Celebrate Small Wins</h3>
+              <h3 className="text-xl font-bold">Celebrate Small Wins</h3>
               <h4>Acknowledge and celebrate your micro-achievements</h4>
               <h5>Placeholder for icons</h5>
             </div>
@@ -103,7 +105,7 @@ export default async function Home() {
               />
             </div>
             <div className="col-span-2 flex flex-col space-y-4 p-2">
-              <h3>Stay Consistent</h3>
+              <h3 className="text-xl font-bold">Stay Consistent</h3>
               <h4>Commit to regular workouts to build momentum</h4>
               <h5>Placeholder for icons</h5>
             </div>
@@ -112,7 +114,82 @@ export default async function Home() {
       </section>
 
       <hr />
-      <h1>hello world</h1>
+
+      <section className="mb-10">
+        <div className="flex flex-col items-center p-10 space-y-4">
+          <h1 className="text-3xl font-bold">Join the FitJam Community</h1>
+          <p>
+            Connect with fellow fitness enthusiasts, share progress, and find
+            workout buddies
+          </p>
+          <Button>Join Community</Button>
+        </div>
+        <div className="grid lg:grid-cols-3 gap-8">
+          {plateaus.map((plateau) => (
+            <Card key={plateau.id} className="">
+              <CardHeader>
+                <CardTitle>{plateau.title}</CardTitle>
+                <CardDescription>{plateau.description}</CardDescription>
+              </CardHeader>
+              <CardContent>
+                <div className="relative">
+                  <img
+                    src={plateau.image}
+                    alt={plateau.title}
+                    className="w-full h-64 object-cover"
+                  />
+                  <div className="badge">
+                    <p>{plateau.level}</p>
+                  </div>
+                </div>
+              </CardContent>
+              <CardFooter>
+                <Button>Show more</Button>
+              </CardFooter>
+            </Card>
+          ))}
+        </div>
+      </section>
+
+      <hr />
+
+      <section className="mb-10">
+        <div className="flex flex-col items-center p-10 space-y-4">
+          <h1 className="text-3xl font-bold">Get Personalized Advice</h1>
+          <p>
+            Need guidance? Fill out the form below and our fitness experts will
+            provide personalized recommendations
+          </p>
+        </div>
+        <div>
+          <form action="" className="flex flex-col items-center space-y-4">
+            <label className="flex flex-col items-start">
+              Name:
+              <input
+                type="text"
+                id="name"
+                className="border border-gray-200 "
+              />
+            </label>
+            <label className="flex flex-col items-start">
+              Fitness Goal:
+              <input type="text" id="name" className="border border-gray-200" />
+            </label>
+            <label className="flex flex-col items-start">
+              Plateau Details:
+              <input
+                type="text"
+                id="name"
+                placeholder="Describe your current plateau"
+                className="border border-gray-200"
+              />
+            </label>
+            <Button>Submit</Button>
+          </form>
+        </div>
+      </section>
+
+      <hr />
     </main>
   );
 }
