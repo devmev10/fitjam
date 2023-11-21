@@ -7,6 +7,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export async function getPlateau() {
   const result = await fetch("http://localhost:4000/plateaus");
@@ -173,7 +174,17 @@ export default async function Home() {
             </label>
             <label className="flex flex-col items-start">
               Fitness Goal:
-              <input type="text" id="name" className="border border-gray-200" />
+              <ToggleGroup type="single">
+                <ToggleGroupItem value="musclebuilding">
+                  Muscle Building
+                </ToggleGroupItem>
+                <ToggleGroupItem value="weightloss">
+                  Weight Loss
+                </ToggleGroupItem>
+                <ToggleGroupItem value="strengthtraining">
+                  Strength Training
+                </ToggleGroupItem>
+              </ToggleGroup>
             </label>
             <label className="flex flex-col items-start">
               Plateau Details:
