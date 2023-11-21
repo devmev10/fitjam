@@ -60,6 +60,45 @@ export default async function Home() {
       </section>
 
       <hr />
+      <section className="grid grid-cols-2">
+        <div>
+          <h2>Micro-Progression System</h2>
+          <h4>Make small improvements for steady progress</h4>
+        </div>
+        <div>
+          <div>
+            <div>
+              <img src="" alt="progress track" />
+            </div>
+            <div>
+              <h3>Track Your Progress</h3>
+              <h4>Record your workouts and monitor your progress over time</h4>
+              <h5>Placeholder for icons</h5>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="" alt="Small Wins" />
+            </div>
+            <div>
+              <h3>Celebrate Small Wins</h3>
+              <h4>Acknowledge and celebrate your micro-achievements</h4>
+              <h5>Placeholder for icons</h5>
+            </div>
+          </div>
+          <div>
+            <div>
+              <img src="" alt="Consistency" />
+            </div>
+            <div>
+              <h3>Stay Consistent</h3>
+              <h4>Commit to regular workouts to build momentum</h4>
+              <h5>Placeholder for icons</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <h1>hello world</h1>
     </main>
   );
