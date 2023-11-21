@@ -201,6 +201,31 @@ export default async function Home() {
       </section>
 
       <hr />
+
+      <section className="mb-10">
+        <div className="flex flex-col items-center p-10 space-y-4">
+          <h1 className="text-3xl font-bold">Track Your Progress</h1>
+          <p>Monitor your fitness journey with data analytics</p>
+          <Button>View Analytics</Button>
+        </div>
+      </section>
+      <div className="grid grid-cols-3 gap-4 ">
+        <div>
+          <p>Weight Lifted</p>
+          <h6>2500 kg</h6>
+          <p>+10 % last week</p>
+        </div>
+        <div>
+          <p>Workout duration</p>
+          <h6>5 hours</h6>
+          <p>+1 hour last week</p>
+        </div>
+        <div>
+          <p>Plateau Breakthroughs</p>
+          <h6>3</h6>
+        </div>
+      </div>
+      <hr />
     </main>
   );
 }
