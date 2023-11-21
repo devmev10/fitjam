@@ -229,7 +229,7 @@ export default async function Home() {
 
       <hr />
 
-      <footer className="flex ">
+      <footer className="flex gap-20 justify-center p-10 text-xl">
         <h3>About Us</h3>
         <h3>Terms of Service</h3>
         <h3>Privacy Policy</h3>{" "}

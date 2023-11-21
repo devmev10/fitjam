@@ -21,5 +21,28 @@
       "description": "Prepare for a marathon with structured training sessions for endurance and stamina.",
       "level": "Advanced"
     }
+  ],
+  "community": [
+    {
+      "id": 1,
+      "title": "Stacy",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/mtxyjo8bp1oz2b3yspsa.jpg",
+      "description": "Reached a new personal best today! Feeling motivated 💪🔥",
+      "level": "Beginner"
+    },
+    {
+      "id": 2,
+      "title": "Tim Apple",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/q2r5n4djyctdws0oklno.jpg",
+      "description": "Enjoyed a challenging outdoor workout. Nature always inspires me! 🌳🏋️",
+      "level": "Intermediate"
+    },
+    {
+      "id": 3,
+      "title": "Martha",
+      "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/vu4averzxjatlm49aom4.jpg",
+      "description": "Meal prepping for the week. Who else loves healthy eating? 🥗🍎",
+      "level": "Advanced"
+    }
   ]
 }
