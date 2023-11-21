@@ -26,7 +26,7 @@ export default async function Home() {
 
       <hr />
 
-      <section>
+      <section className="mb-10">
         <div className="flex flex-col items-center p-10 space-y-4">
           <h1>Personalized Plateau-Breaking Plans</h1>
           <p>Overcome plateaus with tailored strategies</p>
@@ -60,12 +60,12 @@ export default async function Home() {
       </section>
 
       <hr />
-      <section className="grid grid-cols-2">
-        <div>
-          <h2>Micro-Progression System</h2>
-          <h4>Make small improvements for steady progress</h4>
+      <section className="grid grid-cols-2 mt-10 mb-10">
+        <div className="flex flex-col justify-center items-center gap-6">
+          <h2 className="text-4xl font-bold">Micro-Progression System</h2>
+          <h4 className="">Make small improvements for steady progress</h4>
         </div>
-        <div>
+        <article className="flex flex-col space-y-6">
           <div>
             <div>
               <img src="" alt="progress track" />
@@ -96,9 +96,10 @@ export default async function Home() {
               <h5>Placeholder for icons</h5>
             </div>
           </div>
-        </div>
+        </article>
       </section>
 
+      <hr />
       <h1>hello world</h1>
     </main>
   );
