@@ -15,7 +15,9 @@ export async function getPlateau() {
 }
 
 export async function getCommunity() {
-  const result = await fetch("http://localhost:3500/communities");
+  const result = await fetch("http://localhost:3500/communities", {
+    next: { revalidate: 10 }, //This basically refetches the data after 10 seconds when page is refreshed again. Without the revalidate object, result variable will always have the same data as NextJs caches it the first time indefinitely
+  });
   return result.json();
 }
 
