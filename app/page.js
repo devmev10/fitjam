@@ -237,18 +237,18 @@ export default async function Home() {
         </div>
 
         <div className="flex flex-col gap-10 mt-10 items-center">
-          <div className="py-10 px-20  border border-gray-300">
+          <div className="py-10 px-20 w-11/12 h-72 border border-gray-300">
             <img
               src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700632970/fitjam/kvf0hstzupnqrndz9ojb.png"
               alt="bar-chart"
-              className="w-1/2 h-64"
+              className="h-full w-full object-cover"
             />
           </div>
-          <div className="py-10 px-20 w-1/2 border border-gray-300">
+          <div className="py-10 px-20 w-11/12 h-72 border border-gray-300">
             <img
               src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700632970/fitjam/pcqxgpf3p9tpme1xeyax.png"
               alt="graph"
-              className="w-full h-100"
+              className=" h-full w-full object-cover"
             />
           </div>
         </div>
