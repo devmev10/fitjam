@@ -10,7 +10,9 @@ import {
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export async function getPlateau() {
-  const result = await fetch("http://localhost:3500/plateaus");
+  const result = await fetch("http://localhost:3500/plateaus", {
+    next: { revalidate: 10 },
+  });
   return result.json();
 }
 
