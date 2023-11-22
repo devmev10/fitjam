@@ -26,7 +26,6 @@ export async function getCommunity() {
 export default async function Home() {
   const plateaus = await getPlateau();
   const communities = await getCommunity();
-  console.log("communities - ", communities);
 
   return (
     <main>
@@ -234,6 +233,23 @@ export default async function Home() {
           <div className="flex flex-col border-2 border-gray-200 p-2 gap-1">
             <p className="text-gray-400">Plateau Breakthroughs</p>
             <h6 className="text-2xl font-bold">3</h6>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-10 mt-10 items-center">
+          <div className="py-10 px-20  border border-gray-300">
+            <img
+              src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700632970/fitjam/kvf0hstzupnqrndz9ojb.png"
+              alt="bar-chart"
+              className="w-1/2 h-64"
+            />
+          </div>
+          <div className="py-10 px-20 w-1/2 border border-gray-300">
+            <img
+              src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700632970/fitjam/pcqxgpf3p9tpme1xeyax.png"
+              alt="graph"
+              className="w-full h-100"
+            />
           </div>
         </div>
       </section>
