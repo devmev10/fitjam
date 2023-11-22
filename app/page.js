@@ -10,19 +10,19 @@ import {
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export async function getPlateau() {
-  const result = await fetch("http://localhost:4000/plateaus");
+  const result = await fetch("http://localhost:3500/plateaus");
   return result.json();
 }
 
 export async function getCommunity() {
-  const result = await fetch("http://localhost:4000/communities");
+  const result = await fetch("http://localhost:3500/communities");
   return result.json();
 }
 
 export default async function Home() {
   const plateaus = await getPlateau();
-  const community = await getCommunity();
-  console.log("community - ", community);
+  const communities = await getCommunity();
+  console.log("communities - ", communities);
 
   return (
     <main>
@@ -133,7 +133,7 @@ export default async function Home() {
           <Button>Join Community</Button>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
-          {community.map((community) => (
+          {communities.map((community) => (
             <Card key={community.id} className="">
               <CardHeader>
                 <CardTitle>{community.title}</CardTitle>
