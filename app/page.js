@@ -14,8 +14,15 @@ export async function getPlateau() {
   return result.json();
 }
 
+export async function getCommunity() {
+  const result = await fetch("http://localhost:4000/communities");
+  return result.json();
+}
+
 export default async function Home() {
   const plateaus = await getPlateau();
+  const community = await getCommunity();
+  console.log("community - ", community);
 
   return (
     <main>
@@ -126,21 +133,21 @@ export default async function Home() {
           <Button>Join Community</Button>
         </div>
         <div className="grid lg:grid-cols-3 gap-8">
-          {plateaus.map((plateau) => (
-            <Card key={plateau.id} className="">
+          {community.map((community) => (
+            <Card key={community.id} className="">
               <CardHeader>
-                <CardTitle>{plateau.title}</CardTitle>
-                <CardDescription>{plateau.description}</CardDescription>
+                <CardTitle>{community.title}</CardTitle>
+                <CardDescription>{community.description}</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="relative">
                   <img
-                    src={plateau.image}
-                    alt={plateau.title}
+                    src={community.image}
+                    alt={community.title}
                     className="w-full h-64 object-cover"
                   />
                   <div className="badge">
-                    <p>{plateau.level}</p>
+                    <p>{community.level}</p>
                   </div>
                 </div>
               </CardContent>

@@ -22,27 +22,27 @@
       "level": "Advanced"
     }
   ],
-  "community": [
+  "communities": [
     {
-      "id": 1,
+      "id": 4,
       "title": "Stacy",
       "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/mtxyjo8bp1oz2b3yspsa.jpg",
       "description": "Reached a new personal best today! Feeling motivated 💪🔥",
-      "level": "Beginner"
+      "level": "HealthyEater"
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "Tim Apple",
       "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/q2r5n4djyctdws0oklno.jpg",
       "description": "Enjoyed a challenging outdoor workout. Nature always inspires me! 🌳🏋️",
-      "level": "Intermediate"
+      "level": "FitnessJunkie"
     },
     {
-      "id": 3,
+      "id": 6,
       "title": "Martha",
       "image": "https://res.cloudinary.com/djtigzyfc/image/upload/v1700546390/vu4averzxjatlm49aom4.jpg",
       "description": "Meal prepping for the week. Who else loves healthy eating? 🥗🍎",
-      "level": "Advanced"
+      "level": "Runner"
     }
   ]
 }
