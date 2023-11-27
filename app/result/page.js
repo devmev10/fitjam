@@ -150,6 +150,32 @@ export default async function Result() {
       </section>
 
       <hr />
+      <section className="grid grid-cols-2 my-10 mx-20">
+        <div className="flex flex-col items-start ">
+          <h2 className="text-3xl font-bold">Educational Resources</h2>
+          <p>Learn more about health, nutrition, and exercise</p>
+        </div>
+        <div className="flex flex-between gap-10">
+          <div className="flex flex-col items-center gap-2">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+            <h5>10 Tips for Weight Loss</h5>
+            <span className="text-gray-400">Article</span>
+            <h4 className="text-xl font-bold">Author: Nutritionist</h4>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Avatar>
+              <AvatarImage src="https://github.com/shadcn.png" />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
+            <h5>Exercise Form Tutorial</h5>
+            <span className="text-gray-400">Video </span>
+            <h4 className="text-xl font-bold">Duration: 10 mins</h4>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
