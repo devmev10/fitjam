@@ -10,14 +10,14 @@ import {
 import { ToggleGroup, ToggleGroupItem } from "@/components/ui/toggle-group";
 
 export async function getPlateau() {
-  const result = await fetch("http://localhost:3500/plateaus", {
+  const result = await fetch("http://localhost:4000/plateaus", {
     next: { revalidate: 10 },
   });
   return result.json();
 }
 
 export async function getCommunity() {
-  const result = await fetch("http://localhost:3500/communities", {
+  const result = await fetch("http://localhost:4000/communities", {
     next: { revalidate: 10 }, //This basically refetches the data after 10 seconds when page is refreshed again. Without the revalidate object, result variable will always have the same data as NextJs caches it the first time indefinitely
   });
   return result.json();
