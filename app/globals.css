@@ -5,3 +5,7 @@
 .badge {
   @apply absolute bottom-0 right-0 m-1 font-bold rounded-full bg-black text-white p-2 text-sm;
 }
+
+.badge-flexible {
+  @apply m-1 rounded-md bg-gray-300 text-black p-2 text-sm;
+}
