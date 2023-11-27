@@ -8,6 +8,8 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+
 export default async function Result() {
   return (
     <main>
@@ -98,12 +100,21 @@ export default async function Result() {
             </div>
             <div className="col-span-2 flex flex-col space-y-4 p-2">
               <h3 className="font-bold">2-Week Squat Challenge</h3>
-              <p className="text-gray-500 text-sm">Goal: Lose Weight</p>
               <h5>Get ready for stronger and toned legs!</h5>
               <div>
-                <span className="badge-flexible">Legs</span>
+                <span className="badge-flexible">Cardio</span>
                 <span className="badge-flexible">Challenge</span>
-                <span className="badge-flexible">Gym</span>
+                <span className="badge-flexible">Outdoor</span>
+              </div>
+              <div className="flex justify-between">
+                <div className="flex gap-2 items-center">
+                  <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h1>Fitness Coach</h1>
+                </div>
+                <p>🏋️ 🚶</p>
               </div>
             </div>
           </div>
@@ -117,17 +128,20 @@ export default async function Result() {
             </div>
             <div className="col-span-2 flex flex-col space-y-4 p-2">
               <h3 className="font-bold">5k Steps Daily</h3>
-              <p className="text-gray-500 text-sm">
-                Stay active with a daily goal of 5k steps!
-              </p>
-              <h5>Get ready for stronger and toned legs!</h5>
+              <h5>Stay active with a daily goal of 5k steps!</h5>
               <div>
                 <span className="badge-flexible">Cardio</span>
                 <span className="badge-flexible">Challenge</span>
                 <span className="badge-flexible">Outdoor</span>
               </div>
               <div className="flex justify-between">
-                <h6>Fitness Coach</h6>
+                <div className="flex gap-2 items-center">
+                  <Avatar>
+                    <AvatarImage src="https://github.com/shadcn.png" />
+                    <AvatarFallback>CN</AvatarFallback>
+                  </Avatar>
+                  <h1>Fitness Coach</h1>
+                </div>
                 <p>🏋️ 🚶</p>
               </div>
             </div>
