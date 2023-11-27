@@ -82,6 +82,60 @@ export default async function Result() {
       </section>
 
       <hr />
+
+      <section className="grid grid-cols-2 my-10 mx-20">
+        <div className="flex justify-center items-center text-3xl font-bold">
+          <h2>Fitness Challenges</h2>
+        </div>
+        <div className="flex flex-col">
+          <div className="grid grid-cols-3 border p-2 border-gray-300 rounded-md">
+            <div className="col-span-1">
+              <img
+                src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/urx49emlk7jpidphzbmd.jpg"
+                alt="Small Wins"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="col-span-2 flex flex-col space-y-4 p-2">
+              <h3 className="font-bold">2-Week Squat Challenge</h3>
+              <p className="text-gray-500 text-sm">Goal: Lose Weight</p>
+              <h5>Get ready for stronger and toned legs!</h5>
+              <div>
+                <span className="badge-flexible">Legs</span>
+                <span className="badge-flexible">Challenge</span>
+                <span className="badge-flexible">Gym</span>
+              </div>
+            </div>
+          </div>
+          <div className="grid grid-cols-3 border p-2 border-gray-300 rounded-md">
+            <div className="col-span-1">
+              <img
+                src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/urx49emlk7jpidphzbmd.jpg"
+                alt="Small Wins"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="col-span-2 flex flex-col space-y-4 p-2">
+              <h3 className="font-bold">5k Steps Daily</h3>
+              <p className="text-gray-500 text-sm">
+                Stay active with a daily goal of 5k steps!
+              </p>
+              <h5>Get ready for stronger and toned legs!</h5>
+              <div>
+                <span className="badge-flexible">Cardio</span>
+                <span className="badge-flexible">Challenge</span>
+                <span className="badge-flexible">Outdoor</span>
+              </div>
+              <div className="flex justify-between">
+                <h6>Fitness Coach</h6>
+                <p>🏋️ 🚶</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
     </main>
   );
 }
