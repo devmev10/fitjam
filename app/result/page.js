@@ -1,12 +1,15 @@
 export default function Result() {
   return (
     <main>
-      <h1 className="text-center">Result Summary</h1>
-      <section className="grid grid-cols-2 mt-10 mx-20">
+      <h1 className="text-center text-4xl my-20">Result Summary</h1>
+
+      <hr />
+
+      <section className="grid grid-cols-2 my-10 mx-20">
         <div className="flex justify-center items-center text-3xl font-bold">
           <h2>Personalized Summary</h2>
         </div>
-        <div className="grid grid-cols-3 border p-2 border-black">
+        <div className="grid grid-cols-3 border p-2 border-gray-300 rounded-md">
           <div className="col-span-1">
             <img
               src="https://res.cloudinary.com/djtigzyfc/image/upload/v1700539115/fitjam/urx49emlk7jpidphzbmd.jpg"
@@ -31,6 +34,8 @@ export default function Result() {
           </div>
         </div>
       </section>
+
+      <hr />
     </main>
   );
 }
