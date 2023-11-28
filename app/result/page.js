@@ -199,7 +199,7 @@ export default async function Result() {
               <div className="flex gap-2 items-center">
                 <Avatar>
                   <AvatarImage src="https://github.com/shadcn.png" />
-                  <AvatarFallback>CN</AvatarFallback>
+                  <AvatarFallback>RJ</AvatarFallback>
                 </Avatar>
                 <h1>Health Expert</h1>
               </div>
