@@ -6,7 +6,12 @@ export default function FormGetStarted() {
   return (
     <form>
       <label>
-        Age: <input type="text" value={age} onChange={(e) => e.target.value} />
+        Age:{" "}
+        <input
+          type="text"
+          value={age}
+          onChange={(e) => setAge(e.target.value)}
+        />
       </label>
     </form>
   );
