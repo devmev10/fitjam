@@ -31,6 +31,9 @@ export default function FormGetStarted() {
         />
         Female
       </label>
+      <label>
+        Height: <input type="" />
+      </label>
     </form>
   );
 }
