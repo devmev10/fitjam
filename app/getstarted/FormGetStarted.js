@@ -32,7 +32,7 @@ export default function FormGetStarted() {
         Female
       </label>
       <label>
-        Height: <input type="" />
+        Height: <input type="range" />
       </label>
     </form>
   );
